@@ -1,0 +1,579 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Satisfy&display=swap');
+
+*{
+  margin:0px;
+  padding:0px;
+  scroll-behavior: smooth;
+
+ }
+
+ html {
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+background-color: rgba(128, 128, 128, 0.099);
+}
+
+
+
+
+.home-social{
+	 position:fixed;
+   top:30%;
+	display:flex;
+	flex-direction:column;
+	gap:20px;
+	right:5px;
+	 z-index: 99999;
+}
+
+.home-social i,a{
+	font-size:28px;
+	color:white;
+}
+
+
+
+.chat{
+  position:fixed;
+   top:90%;
+   display:flex;
+   justify-content:right;
+   align-items:right;
+  left:20px;
+  z-index: 99999;
+  
+  }
+  
+  .chat-text{
+  background-color:white;
+  width:110px;
+  text-align:center;
+  border-radius:8px;
+  line-height:1.7;
+  font-weight:500;
+   height:27px;
+   display:none;
+
+  }
+  
+  .whatsapp-img{
+  border-radius:100px;
+  height:50px;
+   width:50px;
+  margin-top:-9px;
+  animation: scaleUp 3s ease-in-out infinite;
+  }
+
+
+.scrollTop{
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  background-color: black;
+  color:white;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  z-index: 9999;
+  padding: 10px;
+  border-radius:30px;
+}
+
+ /* END OF  SCROLL TO TOP STYLE RULES */
+  
+
+
+header{
+background-color:white;
+ height:100px;
+ display:flex;
+  width: 100%;
+  top:0px;
+	position:fixed;
+  z-index: 9999;
+
+}
+
+.header-social{
+ position:absolute;
+ right:90px;
+  top:20px;
+}
+
+ 
+.header-social i{
+ font-size:40px;
+}
+
+.logo-card{
+  position:absolute;
+  left:20px;
+}
+
+
+.menu-btns{
+ position:absolute;
+right:30px;
+  z-index:1;
+ top:40px;
+	background-color:#fcb040;
+	width:30px;
+	height:30px;
+	color:white;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+}
+
+.menu-btns i{
+	font-size:27px;
+   }
+
+
+#menu-bar{
+display:flex;
+flex-direction:column; 
+position:absolute;
+background-color:#fcb040;
+height:170px;
+transition: all 0.4s ease;
+top:100px;
+width:100%;
+gap:20px;
+ right:0px;
+ z-index:-4;
+  overflow:hidden;
+ text-align:left;
+}
+
+.nav-link a{
+ text-decoration:none;
+color:white;
+ font-weight:500;
+ font-size:20px;
+}
+
+
+
+.nav-link{
+ display:flex;
+flex-direction:column;
+ position:relative;
+ top:10px;
+ margin:10px;
+	font-weight:bold;
+	left:20px;
+}
+
+
+
+.slide{
+left:-100%;
+}
+
+
+.hide{
+visibility:hidden;
+ z-index:1;
+}
+
+.open{
+position:absolute;
+}
+
+
+/* HOME STYLE RULES */
+
+.smallie{
+	width:100%;
+	position:relative;
+	top:0px
+}
+
+.home-img{
+	width:100%;
+height:80vh;
+filter: brightness(40%);
+}
+
+
+.home{
+position:relative;;
+	top:-230px;
+  z-index: 99;
+	color:white;
+	
+	display:flex;
+
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+
+
+
+.home h1{
+	font-size:29px;
+}
+
+.home h4{
+	padding-top:15px;
+font-weight:20;	
+}
+
+.colored-h4{
+	color:#fcb040;
+}
+
+
+
+/* HOME-INTRO STYLE RULES */
+
+.home-intro p{
+	padding:17px;
+}
+
+.intro{
+	background-color:#fcb040;
+		padding:10px;
+			text-align:center;
+			color:white;
+			width:230px;
+	height:30px;
+			display:flex;
+			gap:10px;
+			font-weight:bold;
+			justify-content:center;
+			align-items:center;
+	border-radius:10px;
+}
+
+
+.home-intro{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	padding:30px;
+	text-align:center;
+	margin-top:-90px;
+	
+}
+
+.intro-details-card{
+	padding:30px;
+	
+}
+
+.details-card{
+	padding:10px 0 10px ;
+	display:flex;
+}
+
+.details-card i{
+	font-size:45px;
+	position:absolute;
+	left:30px;
+	color:#fcb040;
+
+}
+
+
+/* WHAT WE DO STYLE RULES */
+
+.what-we-do{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background-color:#1e2862;
+	position: relative;
+}
+
+
+.we-do-card{
+	
+	color:white;
+	position:relative;
+}
+
+
+.we-do-card span{
+	position:relative;
+	bottom:70px;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+.we-do-card span hr{
+	width:50px;
+	display:none;
+	
+}
+
+.we-do-card span div{
+	border:2px solid white;
+	width:100px;
+	line-height:1.7;
+	
+}
+
+.we-do-card span p{
+	padding:10px;
+	
+}
+
+
+.wedo-img{
+	width:100%;
+	height:130px;
+	filter: brightness(60%);
+}
+
+/*EVENTS STYLE RULES */
+
+.events{
+margin-top:70px;
+padding:15px;
+}
+
+.events h1{
+	padding-bottom:15px;
+	padding-top:15px;
+}
+
+.events-card{
+
+}
+
+.events-card span p{
+padding-bottom:5px;
+}
+
+
+.event-img img{
+	padding:13px 0 13px 0;
+	height:200px;
+}
+
+.event-btn{
+	padding:10px;
+	text-align:center;
+	background-color:#fcb040;
+	color:white;
+	width:180px;
+	margin-top:20px;
+	display:flex;
+	gap:10px;
+	font-weight:bold;
+	line-height:1.3;
+	justify-content:center;
+	align-items:center;
+	border-radius:20px;
+}
+
+/* ACHIVEMENT STYLE RULES */
+
+.achivements{
+	padding:30px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color:rgb(234, 228, 228);
+	position:relative;
+}
+
+.achive-card{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+.achive-card h2{
+	padding-top:17px;
+	padding-bottom:17px;
+	font-size:27px;
+	color: #fcb040;
+}
+
+.achive-card p{
+	font-size:13px;
+
+}
+
+
+
+/* FAQ STYLE RULES */
+
+#faq{
+	padding-bottom:20px;
+	 padding-top:20px;
+	 display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+   }
+
+   
+   .faq-mother{
+	 background-color:black;
+	 color:#fcb040;
+	 border-radius:5px;
+	margin:0px;
+   padding-bottom:15px;
+	padding-top:15px;
+	width:90%;
+	
+
+   }
+   
+   .faq-mother hr{
+	background-color:#fcb040;
+	width:100%;
+	border:none;
+	height:1px;
+   }
+   
+   .faq-header{
+	 padding:10px;
+	 font-size:14px;
+	 cursor:pointer;
+	 position:relative;
+  font-weight:bold;
+
+   }
+   
+   
+   .faq-header::after{
+	 content:"\002B";
+	 font-size:20px;
+	position:absolute;
+	 right:1rem;
+	top:5px;
+	color:#fcb040;
+   }
+   
+   .faq-header.active::after{
+	content:"\2212";
+   }
+   
+   .faq-answer-content{
+	padding:15px;
+	  font-size:14px;
+	border-top:1px solid black;
+	border-image:linear-gradient(to right,yellow,white,yellow)1; 
+   }
+   
+   .faq-answer{
+	max-height:0;
+	overflow:hidden;
+	transition: max-height 0.2s ease-out;
+   }
+   
+   .faq-header.active + .faq-answer{
+	max-height:1000px;
+   }
+   
+  
+
+   /* END OF FAQ STYLE RULES */
+   
+  
+ /* FORM  STYLE RULES */
+
+   .form-add-card{
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+padding:30px;
+background-color:rgb(234, 228, 228);
+   }
+
+   .form-add-card h5{
+	padding-bottom:10px;
+	font-weight:bold;
+	   }
+	
+	   .form-add-card h2{
+		font-size:20px;
+		text-align:center;
+		   }
+
+		   .form-add-card span{
+			color:#fcb040;
+			   }
+	
+
+   #contact-form{
+	padding-top:15px;
+	display:flex;
+	flex-direction: column;
+	gap:2px;
+   }
+
+   input{
+	width:270px;;
+	height:35px;
+   }
+
+   #message{
+	width:270px;;
+	height:125px;
+   }
+
+   #message::placeholder{
+	top:-40px;
+   }
+
+   input::placeholder{
+	position:relative;
+	left:20px;
+   }
+
+   .sub-btn{
+	background-color:#fcb040;
+	padding:10px;
+		text-align:center;
+		color:black;
+		width:180px;
+		display:flex;
+		font-weight:bold;
+		line-height:1.3;
+		justify-content:center;
+		align-items:center;
+		font-size:15px;
+		color:white;
+   }
+
+   footer{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+		align-items:center;
+		background-color: black;
+		color:white;
+		padding:30px;
+   }
+
+   .footer-social{
+padding:20px;
+display:flex;
+gap:10px;
+color:#2196F3;
+   }
+
+   .footer-social a{
+	color:#fcb040;
+	   }
+
+	   footer h2{
+		padding-top:15px;
+	   }
